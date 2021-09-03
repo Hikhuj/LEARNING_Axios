@@ -201,8 +201,6 @@ function transformResponse() {
 // ERROR HANDLING
 // Manejo de errores
 function errorHandling() {
-  // Podemos hacer que retorne error para un cierto Error Code nada mas
-  /*
   axios
     .get('https://jsonplaceholder.typicode.com/todoss')
     .then(res => showOutput(res))
@@ -222,8 +220,9 @@ function errorHandling() {
         console.error(err.message);
       }
     });
-  */
 
+  // Podemos hacer que retorne error para un cierto Error Code nada mas
+  /*
   axios
   .get('https://jsonplaceholder.typicode.com/todoss', {
     validateStatus: function(status){
@@ -247,6 +246,7 @@ function errorHandling() {
       console.error(err.message);
     }
   });
+  */
 }
 
 // CANCEL TOKEN
